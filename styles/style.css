@@ -46,6 +46,7 @@
 }
 
 .header__record-decoration {
+  display: flex;
   align-items: center;
   position: absolute;
   top: 10px;

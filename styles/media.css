@@ -35,7 +35,7 @@
   }
 
   .main__section {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
   }
 
   .main__section-reasons .main__section-title:first-child {
@@ -57,6 +57,7 @@
   }
 
   .main__section-pictures {
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, min-content);
     gap: 20px;
   }

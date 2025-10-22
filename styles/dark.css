@@ -10,6 +10,7 @@
   display: flex;
 }
 
+.theme-dark .header__theme-menu-button,
 .theme-dark .main__section-title {
   color: var(--accent);
 }
@@ -23,6 +24,7 @@
 .theme-dark .header::after,
 .theme-dark .footer::after,
 .theme-dark .header__theme-menu-button,
-.theme-dark .main__section-title {
-  --accent: #ff0070;
+.theme-dark .header__theme-menu-button:hover::after,
+.theme-dark .header__theme-menu-button_active::after {
+  border-color: var(--accent);
 }

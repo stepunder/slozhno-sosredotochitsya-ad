@@ -1,24 +1,15 @@
 :root {
-  --background: #fff1f7;
-  --accent: #ff8dcb;
-  --text: #353430;
-  --image: url("../images/cover-image-light.png");
-  --header: #ffc2e6;
+  --background: #000028;
+  --accent: #ff0070;
+  --text: #f1b2ce;
+  --image: url("../images/cover-image-dark.png");
+  --header: #db00ff;
 }
 
- .header__record-decoration {
-  display: none;
+ .main__section-title {
+  color: var(--accent);
 }
 
- .header::before,
- .footer::before,
- .header::after,
- .footer::after,
- .header__theme-menu-button {
-  --accent: var(--text);
-}
-
- .main__section-title,
  .title-accent {
-  color: var(--text);
+  color: var(--background);
 }
