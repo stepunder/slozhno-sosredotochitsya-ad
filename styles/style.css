@@ -1,6 +1,6 @@
 .page {
   margin: 0 auto;
-  background: center/cover fixed no-repeat;
+  background: var(--image) center/cover fixed no-repeat;
   background-color: var(--background);
   color: var(--text);
   font-family: "IBM Plex Mono", monospace;
@@ -46,7 +46,6 @@
 }
 
 .header__record-decoration {
-  display: flex;
   align-items: center;
   position: absolute;
   top: 10px;

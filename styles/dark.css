@@ -1,12 +1,13 @@
 :root.theme-dark {
   --background: #000028;
-  --header: #db00ff;
   --accent: #ff0070;
   --text: #f1b2ce;
+  --image: url("../images/cover-image-dark.png");
+  --header: #db00ff;
 }
 
-.theme-dark .page {
-  background-image: url("../images/cover-image-dark.png");
+.theme-dark .header__record-decoration {
+  display: flex;
 }
 
 .theme-dark .main__section-title {
@@ -15,4 +16,13 @@
 
 .theme-dark .title-accent {
   color: var(--background);
+}
+
+.theme-dark .header::before,
+.theme-dark .footer::before,
+.theme-dark .header::after,
+.theme-dark .footer::after,
+.theme-dark .header__theme-menu-button,
+.theme-dark .main__section-title {
+  --accent: #ff0070;
 }

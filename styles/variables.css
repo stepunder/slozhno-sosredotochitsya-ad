@@ -1,18 +1,24 @@
 :root {
-  --background: #000028;
-  --header: #db00ff;
-  --accent: #ff0070;
-  --text: #f1b2ce;
+  --background: #fff1f7;
+  --accent: #ff8dcb;
+  --text: #353430;
+  --image: url("../images/cover-image-light.png");
+  --header: #ffc2e6;
 }
 
-.theme-dark .page {
-  background-image: url("../images/cover-image-dark.png");
+ .header__record-decoration {
+  display: none;
 }
 
-.main__section-title {
-  color: var(--accent);
+ .header::before,
+ .footer::before,
+ .header::after,
+ .footer::after,
+ .header__theme-menu-button {
+  --accent: var(--text);
 }
 
-.title-accent {
-  color: var(--background);
+ .main__section-title,
+ .title-accent {
+  color: var(--text);
 }
