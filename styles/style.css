@@ -1,5 +1,174 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  margin: 0 auto;
+  background: center/cover fixed no-repeat;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 18px;
+}
+
+.header,
+.footer {
+  display: grid;
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
+  padding: 10px;
+}
+
+.header {
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.header::before,
+.footer::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
+}
+
+.header::after,
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+}
+
+.header__record-decoration {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 25px;
+  color: var(--accent);
+}
+
+.header__record-decoration::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  margin: 0 9px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  box-shadow: 0 0 4px 2px var(--accent);
+}
+
+.header__theme-menu {
+  margin: auto 0 auto auto;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  width: 70px;
+  padding: 3px 13px 5px;
+  border: none;
+  background-color: transparent;
+  color: var(--accent);
+  line-height: 18px;
+}
+
+.header__theme-menu-button-text {
+  position: relative;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover::after,
+.header__theme-menu-button_active::after,
+.header__theme-menu-button:focus-visible::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header__theme-menu-button:hover::after,
+.header__theme-menu-button_active::after {
+  border: 1px solid var(--accent);
+}
+
+.header__theme-menu-button:not(.header__theme-menu-button_active):hover::after {
+  opacity: 0.4;
+}
+
+.header__theme-menu-button:focus-visible::after {
+  border-bottom: 1px solid var(--accent);
+}
+
+.header__title,
+.footer__title {
+  color: var(--header);
+  font-size: clamp(7.25rem, 7.0714rem + 0.8929vw, 7.5rem);
+  line-height: 83%;
+  text-shadow: 4px 4px 0 var(--accent);
+}
+
+.header__title-accent {
+  margin: auto 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 40px 0;
+  padding: 0 10px;
+}
+
+.main__section {
+  display: grid;
+  gap: 10px 20px;
+}
+
+.main__section-text-link {
+  text-shadow: 2px 2px 0 var(--accent);
+}
+
+.main__section-text-link:hover::after,
+.main__section-text-link:focus-visible::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: 100%;
+}
+
+.main__section-text-link:hover::after {
+  border-bottom: 1px solid var(--text);
+}
+
+.main__section-text-link:focus-visible::after {
+  border: 1px solid var(--text);
+}
+
+.main__section-pictures-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer {
+  place-content: center;
 }

@@ -1,0 +1,20 @@
+.interactive-element {
+  position: relative;
+  cursor: pointer;
+}
+
+.interactive-element:focus {
+  outline: none;
+}
+
+.margin-bottom {
+  margin: 0 0 10px;
+}
+
+.title-accent {
+  background-color: var(--accent);
+}
+
+.title-bold {
+  font-weight: bold;
+}
