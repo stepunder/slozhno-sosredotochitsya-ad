@@ -27,27 +27,27 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root.theme-auto {
     --background: #fff1f7;
     --header: #ffc2e6;
     --accent: #ff8dcb;
     --text: #353430;
   }
 
-  .header__record-decoration {
+  .theme-auto .header__record-decoration {
     display: none;
   }
 
-  .header::before,
-  .footer::before,
-  .header::after,
-  .footer::after,
-  .header__theme-menu-button {
+  .theme-auto .header::before,
+  .theme-auto .footer::before,
+  .theme-auto .header::after,
+  .theme-auto .footer::after,
+  .theme-auto .header__theme-menu-button {
     --accent: var(--text);
   }
   
-  .main__section-title,
-  .title-accent {
+  .theme-auto .main__section-title,
+  .theme-auto .title-accent {
     color: var(--text);
   }
 }

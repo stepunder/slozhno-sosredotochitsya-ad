@@ -51,8 +51,9 @@
     grid-column: 2 / -1;
   }
 
-  .main__section-factors {
-    grid-template-columns: 1fr;
+  .main__section-factors .title-accent,
+  .main__section-factors .main__section-text {
+    grid-column: span 3;
   }
 
   .main__section-factors .main__section-text {
@@ -102,13 +103,16 @@
     flex-direction: row;
   }
 
-  .main__section-factors {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, min-content);
-    grid-auto-flow: column;
+  .main__section-factors .title-accent,
+  .main__section-factors .main__section-text {
+    grid-column: auto;
   }
 
   .main__section-factors .title-accent {
     grid-row: 2;
+  }
+
+  .main__section-factors .main__section-text {
+    grid-row: 3;
   }
 }
