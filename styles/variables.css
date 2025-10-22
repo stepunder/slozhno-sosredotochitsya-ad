@@ -5,6 +5,10 @@
   --text: #f1b2ce;
 }
 
+.theme-dark .page {
+  background-image: url("../images/cover-image-dark.png");
+}
+
 .main__section-title {
   color: var(--accent);
 }

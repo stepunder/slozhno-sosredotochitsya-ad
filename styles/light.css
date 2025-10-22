@@ -27,11 +27,15 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-auto {
+  :root {
     --background: #fff1f7;
     --header: #ffc2e6;
     --accent: #ff8dcb;
     --text: #353430;
+  }
+
+  .theme-auto .page {
+    background-image: url("../images/cover-image-light.png");
   }
 
   .theme-auto .header__record-decoration {
