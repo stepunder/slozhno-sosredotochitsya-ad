@@ -21,27 +21,33 @@
   --accent: var(--text);
 }
 
+.theme-light .main__section-title,
+.theme-light .title-accent {
+  color: var(--text);
+}
+
 @media (prefers-color-scheme: light) {
-  :root.theme-auto {
+  :root {
     --background: #fff1f7;
     --header: #ffc2e6;
     --accent: #ff8dcb;
     --text: #353430;
   }
 
-  .theme-auto .page {
-    background-image: url("../images/cover-image-light.png");
+  .header__record-decoration {
+    display: none;
   }
 
-  .theme-auto .header__record-decoration {
-    visibility: hidden;
-  }
-
-  .theme-auto .header::before,
-  .theme-auto .footer::before,
-  .theme-auto .header::after,
-  .theme-auto .footer::after,
-  .theme-auto .header__theme-menu-button {
+  .header::before,
+  .footer::before,
+  .header::after,
+  .footer::after,
+  .header__theme-menu-button {
     --accent: var(--text);
+  }
+  
+  .main__section-title,
+  .title-accent {
+    color: var(--text);
   }
 }
