@@ -52,12 +52,7 @@
   }
 
   .main__section-factors {
-    grid-template-rows: repeat(3, min-content);
-    grid-auto-flow: column;
-  }
-
-  .main__section-factors .title-accent {
-    grid-row: 2;
+    grid-template-columns: 1fr;
   }
 
   .main__section-factors .main__section-text {
@@ -105,5 +100,15 @@
 
   .header__theme-menu-list {
     flex-direction: row;
+  }
+
+  .main__section-factors {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    grid-auto-flow: column;
+  }
+
+  .main__section-factors .title-accent {
+    grid-row: 2;
   }
 }
