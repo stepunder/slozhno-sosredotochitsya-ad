@@ -27,7 +27,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root.theme-auto {
     --background: #fff1f7;
     --header: #ffc2e6;
     --accent: #ff8dcb;
