@@ -71,7 +71,6 @@
   
   .main__section-pictures .title-accent {
     grid-column: span 3;
-    margin: 0;
   }
 
   .main__section-pictures-image:nth-child(2) {
@@ -92,6 +91,10 @@
   .main__section-pictures-image:nth-child(5) {
     grid-column: 1;
     grid-row: 3 / -1;
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 

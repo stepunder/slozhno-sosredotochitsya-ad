@@ -170,6 +170,22 @@
   object-position: center;
 }
 
+.main__section-pictures-image:nth-child(2) {
+  grid-row: 2;
+}
+
+.main__section-pictures-image:nth-child(3) {
+  grid-row: 3;
+}
+
+.main__section-pictures-image:nth-child(4) {
+  grid-row: 6;
+}
+
+.main__section-pictures-image:nth-child(5) {
+  grid-row: 4;
+}
+
 .footer {
   place-content: center;
 }

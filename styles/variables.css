@@ -1,18 +1,14 @@
-:root.theme-auto {
+:root {
   --background: #000028;
   --header: #db00ff;
   --accent: #ff0070;
   --text: #f1b2ce;
 }
 
-.theme-auto .page {
-  background-image: url("../images/cover-image-dark.png");
-}
-
-.theme-auto .main__section-title {
+.main__section-title {
   color: var(--accent);
 }
 
-.theme-auto .title-accent {
+.title-accent {
   color: var(--background);
 }
